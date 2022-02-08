@@ -1,0 +1,166 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-08T00:24:45.670Z",
+        "line": 4,
+        "name": "Get request to users",
+        "description": "",
+        "id": "api-tests;get-request-to-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2206003000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "existing Server application \"https://reqres.in/api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefs.stepDefs.existing_Server_application_https_reqres_in_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88474000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "on GET request to users it returns expected users list",
+            "match": {
+              "location": "stepDefs.stepDefs.on_GET_request_to_users_it_returns_expected_users_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-08T00:24:48.061Z",
+        "line": 8,
+        "name": "Get request to single user",
+        "description": "",
+        "id": "api-tests;get-request-to-single-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114968000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "existing Server application \"https://reqres.in/api/users/2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users/2\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefs.stepDefs.existing_Server_application_https_reqres_in_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 666505000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "on GET request it returns expected welcome message",
+            "match": {
+              "location": "stepDefs.stepDefs.on_GET_request_to_users_it_returns_expected_welcome_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-08T00:24:48.859Z",
+        "line": 12,
+        "name": "Get request to nonexisting user",
+        "description": "",
+        "id": "api-tests;get-request-to-nonexisting-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 314774000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "existing Server application \"https://reqres.in/api/users/23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users/23\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefs.stepDefs.existing_Server_application_https_reqres_in_api(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1814000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "on GET request it returns \"404\" status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefs.stepDefs.on_GET_request_to_users_it_returns_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "API Tests",
+    "description": "",
+    "id": "api-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ApiSteps.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
